@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="./css/mystore.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav_links">
+      <div class="user">
+        <img width="48" height="48" src="https://img.icons8.com/fluency/48/user-male-circle--v1.png"
+          alt="User Male Circle" />
+        <div class="user_det">
+          <p>DeShawn</p>
+          <p>$0.23</p>
+        </div>
+      </div>
+      <div class="header">
+        <ul>
+          <li class="active-message">
+            <a href="message.html"><i class="ri-mail-line"></i><span class="message-count">3</span></a>
+          </li>
+          <li class="active-shopping">
+            <a href="#"><i class="ri-shopping-cart-line"></i><span class="message-count">1</span></a>
+          </li>
+          <li id="ri-menu">
+            <a href="#"><i class="ri-menu-line"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="sidebar_nav">
+    <div class="close">
+      <i class="ri-close-line"></i>
+    </div>
+    <ul>
+      <li><i class="ri-user-line icon"></i><a href="UserProfile.html">Personal Account</a></li>
+      <li><i class="ri-shopping-cart-line icon"></i><a href="Purchases.html">Purchase</a></li>
+      <li><i class="ri-lock-2-line icon"></i><a href="AccountSecurity.html">Account Security</a></li>
+      <li><i class="ri-chat-1-line icon"></i><a href="message.html">Messages</a></li>
+      <li><i class="ri-wallet-2-line icon"></i><a href="Walletpage.html">Wallet</a></li>
+      <li><i class="ri-store-line icon"></i><a href="mystore.html">My Store</a></li>
+    </ul>
+    <div class="faq">
+      <a href="#"><i class="ri-translate-2"></i>FAQ</a>
+    </div>
+  </aside>
+
+  <section class="head_button">
+    <button><a href="main.html">MAIN PAGE</a></button>
+    <button><a href="trustedSeller.html">TRUSTED SELLER</a></button>
+    <button><a href="AutoEScrow.html">AUTO ESCROW</a></button>
+    <button><a href="news.html">NEWS</a></button>
+  </section>
+
+  <div class="container">
+    <aside class="cat_side_bar">
+      <ul>
+        <li><i class="ri-user-line icon"></i><a href="UserProfile.html">Personal Account</a></li>
+        <li><i class="ri-shopping-cart-line icon"></i><a href="Purchases.html">Purchase</a></li>
+        <li><i class="ri-lock-2-line icon"></i><a href="AccountSecurity.html">Account Security</a></li>
+        <li><i class="ri-chat-1-line icon"></i><a href="message.html">Messages</a></li>
+        <li><i class="ri-wallet-2-line icon"></i><a href="Walletpage.html">Wallet</a></li>
+        <li><i class="ri-store-line icon"></i><a href="mystore.html">My Store</a></li>
+      </ul>
+    </aside>
+
+    <main class="main_content">
+      <div class="top_ber">
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <div class="top_ber_btn">
+          <a href="mystore.html"><button>All items</button></a>
+          <a href="sales.html"><button>Sales</button></a>
+          <a href="Statistics.html"><button>Statistics</button></a>
+        </div>
+
+      </div>
+
+      <div class="store">
+        <div class="store_content">
+          <img
+            src="https://images.unsplash.com/photo-1500277127996-2e6206b069ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Item">
+          <div class="cont">
+            <p>Lorem ipsum dolor, sit amet consectetur adipi</p>
+          </div>
+          <span class="pr">$10.00</span>
+          <p class="st">x0</p>
+          <button id="edit-button" class="edit-button">Edit</button>
+          <button>Upload Item</button>
+          <button>Delete</button>
+        </div>
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+      <div class="edit_popup" id="editPopup">
+        <div class="controls">
+          <img
+            src="https://images.unsplash.com/photo-1500277127996-2e6206b069ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="User Profile Photo">
+          <input type="text" placeholder="MT_Real">
+          <input type="number" value="10.00">
+          <p>item available:</p>
+          <button>Now</button>
+          <input type="text" placeholder="Pre-order">
+        </div>
+
+        <div class="save-section">
+          <button class="save-button">Save</button>
+        </div>
+
+        <div class="item-details-and-category">
+          <div class="item-details">
+            <textarea placeholder="Item details"></textarea>
+          </div>
+          <div class="category-section">
+            <form>
+              <label><input type="checkbox" name="category" value="category1"> Category 1</label><br>
+              <label><input type="checkbox" name="category" value="category2"> Category 2</label><br>
+              <label><input type="checkbox" name="category" value="category3"> Category 3</label><br>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="last_btn">
+        <button>Load More</button>
+        <button id="addNewItemBtn">Add new items</button>
+      </div>
+
+      <div class="edit-popup" id="addNewItemPopup">
+        <div class="controls">
+          <img
+            src="https://images.unsplash.com/photo-1500277127996-2e6206b069ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="User Profile Photo">
+          <input type="text" placeholder="items name">
+          <input type="text" placeholder="$..">
+          <p>item available:</p>
+          <button>Now</button>
+          <input type="text" placeholder="Pre-order">
+          <div class="save">
+            <button class="save-btn">Save</button>
+          </div>
+        </div>
+
+        <div class="item-details-and-category">
+          <div class="item-details">
+            <textarea placeholder="write infu about your item.."></textarea>
+          </div>
+          <div class="category-section">
+            <form>
+              <label><input type="checkbox" name="category" value="category1"> Category 1</label><br>
+              <label><input type="checkbox" name="category" value="category2"> Category 2</label><br>
+              <label><input type="checkbox" name="category" value="category3"> Category 3</label><br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+  <script src="app.js"></script>
+  <script src="popup.js"></script>
+  <script>
+    document.getElementById('addNewItemBtn').addEventListener('click', function () {
+      document.getElementById('addNewItemPopup').style.display = 'block';
+    });
+
+    document.querySelector('.save-btn').addEventListener('click', function () {
+      document.getElementById('addNewItemPopup').style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

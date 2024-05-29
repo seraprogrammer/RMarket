@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="./css/Registration.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="login">
+    <div class="login_page">
+      <div class="login_page_title">
+        <h1>RMARKET</h1>
+        <p><span class="light_text">INNOVAT</span>ION MARK<span class="light_text">ETPLACE</span></p>
+      </div>
+      <form id="loginForm" action="#" onsubmit="return validateForm()">
+        <div class="input_field">
+          <input type="text" name="username" placeholder="Username">
+          <div class="password-input">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <i class="ri-eye-off-line password-toggle" onclick="togglePasswordVisibility()"></i>
+            <i class="ri-eye-line password-toggle" style="display: none;"></i>
+          </div>
+          <div class="password-input">
+            <input type="password" id="secretCode" name="secret-code" placeholder="Secret Code">
+
+            <i class="ri-eye-off-line password-toggle" onclick="toggleSecretCodeVisibility()"></i>
+            <i class="ri-eye-line password-toggle" style="display: none;"></i>
+          </div>
+        </div>
+        <div class="agree">
+          <input type="checkbox">
+          <p>By Clicking "Sign Up" you are agree to our <a href="./TermsandConditions.html">Terms & Conditions</a></p>
+        </div>
+        <div class="login_page_btn">
+          <button class="lg_btn" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
